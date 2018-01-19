@@ -5,7 +5,7 @@ const server = express();
 
 const port = process.env.PORT || 3000;
 
-const routes = require('./api/routes/routes');
+const routes = require('./api/routes/classRoutes');
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://localhost/ayc', { useMongoClient: true });
 
